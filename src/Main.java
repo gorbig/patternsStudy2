@@ -1,12 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        Jump jump = new Jump();
-        Cat cat = new Cat(jump);
-        cat.do0();
+        AnimalInTheBush animalInTheBush = new AnimalInTheBush();
+        animalInTheBush.setAnimal(new Cat());
+        animalInTheBush.runn();
+        animalInTheBush.eatt();
+        animalInTheBush.sayy();
 
-        Run run = new Run();
-        Cat cat1 = new Cat(run);
-        cat1.do0();
+        animalInTheBush.setAnimal(new Dog());
+
+        animalInTheBush.runn();
+        animalInTheBush.eatt();
+        animalInTheBush.sayy();
+
 
     }
 }

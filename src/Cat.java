@@ -1,11 +1,17 @@
-public class Cat
-{
-    private Strategy strategy;
+public class Cat implements Animal{
 
-    public Cat(Strategy strategy) {
-        this.strategy = strategy;
+    @Override
+    public void running() {
+        System.out.println("Cat running");
     }
-    public void do0(){
-        strategy.doSmth();
+
+    @Override
+    public void eat() {
+        System.out.println("Cat eating");
+    }
+
+    @Override
+    public void say() {
+        System.out.println("Cat meows");
     }
 }
