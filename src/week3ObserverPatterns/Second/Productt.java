@@ -1,16 +1,15 @@
 package week3ObserverPatterns.Second;
 
-import week3ObserverPatterns.First.Subscriber;
 import week3ObserverPatterns.First.SubscriberTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Product implements productionCentre {
-    List<SubscriberTemplate> subscribers = new ArrayList<>();
+public class Productt implements productionCentree {
+    List<SubscriberTemplatee> subscribers = new ArrayList<>();
     double cost;
 
-    public Product(double cost) {
+    public Productt(double cost) {
         this.cost = cost;
     }
 
@@ -20,24 +19,26 @@ public class Product implements productionCentre {
 
     }
 
+
     @Override
-    public void addSubscriber(SubscriberTemplate sub) {
+    public void addSubscriber(SubscriberTemplatee sub) {
         this.subscribers.add(sub);
 
         notifyObserver();
     }
 
     @Override
-    public void removeSubscriber(SubscriberTemplate sub) {
+    public void removeSubscriber(SubscriberTemplatee sub) {
         this.subscribers.remove(sub);
         notifyObserver();
     }
 
+
     @Override
     public void notifyObserver() {
-        for(SubscriberTemplate sub: subscribers)
+        for(SubscriberTemplatee sub: subscribers)
         {
-            sub.handleTheEmail(this.cost);
+            sub.handleTheEmaill(this.cost);
         }
 
     }

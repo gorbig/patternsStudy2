@@ -1,11 +1,13 @@
-//package week3ObserverPatterns.Second;
-//
-//public class Main {
-//    public static void main(String[] args) {
-//        SubscriberTemplate firstSub = new Subscriber("Pika Rico");
-//        SubscriberTemplate SecondSub = new Subscriber("Sinior Pink");
-//        Product product = new Product(40);
-//        product.addSubscriber(firstSub);
-//
-//    }
-//}
+package week3ObserverPatterns.Second;
+
+public class Main {
+    public static void main(String[] args) {
+        SubscriberTemplatee firstSub = new Subscriberr("Pika Rico");
+        SubscriberTemplatee SecondSub = new Subscriberr("Sinior Pink");
+        Productt product = new Productt(40);
+        product.addSubscriber(firstSub);
+        product.addSubscriber(SecondSub);
+        product.changeCost(25);
+
+    }
+}
