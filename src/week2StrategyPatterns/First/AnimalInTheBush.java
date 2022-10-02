@@ -1,3 +1,5 @@
+package week2StrategyPatterns.First;
+
 public class AnimalInTheBush {
     private Animal animal;
 
@@ -11,7 +13,7 @@ public class AnimalInTheBush {
     }
     public void runn()
     {
-        animal.running();
+        animal.run();
     }
 
     public void sayy()

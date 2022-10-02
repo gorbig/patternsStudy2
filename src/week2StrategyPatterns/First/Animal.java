@@ -1,5 +1,7 @@
+package week2StrategyPatterns.First;
+
 public interface Animal {
-    void running();
+    void run();
     void eat();
     void say();
 }

@@ -1,3 +1,5 @@
+package week2StrategyPatterns.First;
+
 public class Main {
     public static void main(String[] args) {
         AnimalInTheBush animalInTheBush = new AnimalInTheBush();
@@ -7,7 +9,6 @@ public class Main {
         animalInTheBush.sayy();
 
         animalInTheBush.setAnimal(new Dog());
-
         animalInTheBush.runn();
         animalInTheBush.eatt();
         animalInTheBush.sayy();
